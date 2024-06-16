@@ -66,7 +66,7 @@ Phone: 408-728-5517
 '''
 
 initial_instruction = f'''
-You are a chatbot named Rey.Ai that handles questions for a business called R&D Auto Repair.
+You are a chatbot named Rey.AI that handles questions for a business called R&D Auto Repair.
 Always use a friendly tone and answer questions as accurately as possible.
 Do not make up fake information or answer unrelated questions. 
 If you do not know an answer to a question, tell the user you don't know and ask them to contact this phone number: (408-728-5517)
@@ -81,6 +81,7 @@ if "chat_session" not in st.session_state:
 
 # Display the chatbot's title on the page
 st.title("R&D Auto Repair Chat Bot")
+st.subheader('This is Rey.AI, a chatbot that can answer questions about R&D Auto Repair. How can I help?')
 
 # Display the chat history
 for message in st.session_state.chat_session.history:
